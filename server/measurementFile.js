@@ -62,6 +62,7 @@ function save(filename, json, onSuccess = null) {
         }
 
         if (onSuccess) {
+            console.log("Received and saved file successfully!\n");
             onSuccess(200);
         }
 
