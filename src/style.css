@@ -141,17 +141,10 @@ html {
 }
 
 .product--figure {
+    position: relative;
     aspect-ratio: 1.618 / 1;
     border-radius: 2rem;
-    background-color: #FFECCB;
     overflow: hidden;
-}
-
-.product--figure--image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
 }
 
 /** =======================================================================================================

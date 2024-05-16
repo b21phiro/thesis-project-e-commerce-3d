@@ -1,17 +1,21 @@
-import ProductImage from './../images/coffee.jpg';
-
 class Product {
-
-    id = null;
 
     title = undefined;
 
     price = 0;
 
-    constructor(id, title, price) {
-        this.id = id;
+    /** @type { Coffee } */
+    featured = null;
+
+    /**
+     * @param title { string }
+     * @param price { int }
+     * @param featured { Coffee }
+     */
+    constructor(title, price, featured= null) {
         this.title = title;
         this.price = price;
+        this.featured = featured;
     }
 
 }
