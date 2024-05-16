@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thesis project. A simple ecomerce site with traditional 2D-rendered products.">
+    <meta name="keywords" content="b21phiro, thesis, e-commerce">
+    <meta name="author" content="Philip Rosenqvist">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <p class="logotype">E-Coffee</p>
+            <nav class="navigation">
+                <a aria-current="page" class="navigation--link" href="/" title="Shop">Shop</a>
+                <a class="navigation--link" href="https://www.github.com/b21phiro" title="Github @b21phiro">GitHub</a>
+                <a class="navigation--link" href="https://www.philiprosenqvist.com/" title="Author's website">Author</a>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="wrapper">
+            <h2 class="title">Products</h2>
+            <ol id="items" class="products"></ol>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <p class="footer--text">Github:
+                <a class="footer--text--link"
+                   href="https://www.github.com/b21phiro"
+                   title="Github">@b21phiro</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
