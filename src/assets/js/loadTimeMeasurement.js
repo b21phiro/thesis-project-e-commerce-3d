@@ -141,7 +141,11 @@ function end() {
         // Save and send the measurement to the server.
         sendToServer(measurement)
             .then(() => {
+
                 console.log("Sent!");
+
+                alert("Measurement completed!");
+
             });
 
     }

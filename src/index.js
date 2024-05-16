@@ -8,7 +8,7 @@ import Coffee from "./assets/js/mesh/coffee";
 const amountOfProducts = 15;
 
 // Starts measuring the load time.
-loadTimeMeasurement.init(10, amountOfProducts);
+loadTimeMeasurement.init(100, amountOfProducts);
 
 window.onload = () => {
 
@@ -67,6 +67,6 @@ window.onload = () => {
     loadTimeMeasurement.end();
 
     // Measures the framerate.
-    // framerateMeasurement.init(5, 5);
+    // framerateMeasurement.init(10, 10);
 
 };
