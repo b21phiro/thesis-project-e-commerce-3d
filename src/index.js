@@ -1,14 +1,13 @@
 import './style.css';
 import * as loadTimeMeasurement from "./assets/js/loadTimeMeasurement";
-import * as framerateMeasurement from "./assets/js/framerateMeasurement";
 import productFactory from "./assets/js/factory/productFactory";
 import Coffee from "./assets/js/mesh/coffee";
 
 // The amount of products that we want to display.
-const amountOfProducts = 15;
+const amountOfProducts = 27;
 
 // Starts measuring the load time.
-loadTimeMeasurement.init(100, amountOfProducts);
+// loadTimeMeasurement.init(1000, amountOfProducts); <-- (1/2) Comment out this to measure loadtimes.
 
 window.onload = () => {
 
@@ -64,9 +63,6 @@ window.onload = () => {
 
     // Calculates the duration of the
     // load-time from start.
-    loadTimeMeasurement.end();
-
-    // Measures the framerate.
-    // framerateMeasurement.init(10, 10);
+    loadTimeMeasurement.end(); // (2/2) <-- Comment out this to measure load times.
 
 };
